@@ -20,9 +20,10 @@
     <h1>Olá, Mundo!!!</h1> <!--Comentario en HTML-->
     <p>Já me livrei da maldiçao</p>
     <script>
-        var n1 = window.prompt('Digite um numero: ') //Comentario JS
-        var n2 = window.prompt("Diegite outro numero: ")
-        var s =         
+        var n1 = Number(window.prompt('Digite um numero: ')) //Comentario JS
+        var n2 = Number(window.prompt("Diegite outro numero: "))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é: ${s}`)     
     </script>
 </body>
 </html>
