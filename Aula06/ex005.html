@@ -15,6 +15,16 @@
 <body>
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
-    <div>Clique em mim</div>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var p1 = document.getElementsByTagName("p")[1]
+        var d = document.getElementById("msg")
+        document.write("Estra escrito assim: " + p1.innerText)
+        d.style.background = "blue"
+
+
+    </script>
 </body>
 </html>
