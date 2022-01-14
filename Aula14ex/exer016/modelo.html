@@ -5,19 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>Modelo de Ecercicio</title>
+    <title>Contador numerico</title>
 </head>
-<body>
+<body onload="Carregar()">
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Contador</h1>
     </header>
     <section>
         <div>
-
+            <p>Indique um numero de inicio: </p>
+            <input type="number" id="inicio">
         </div>
         <div>
-
+            <p>Indique um numero final:</p>
+            <input type="number" id="final">
         </div>
+        <div>
+            <p>Passo ou pular:</p>
+            <input type="number" id="salto">
+        </div>
+        <div id="res">
+        </div>
+        <button onclick="Contar()" value="Contar">Contar</button>
     </section>
     <footer>
         <p>&copy; Curso em video</p>
